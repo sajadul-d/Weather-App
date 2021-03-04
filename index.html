@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Weather App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        .h{
+            text-align: center;
+            color:tomato;
+        }
+        #foot{
+            text-align: center;
+            color:white;
+        }
+        #info{
+            text-align: center;
+            color: rgb(255, 71, 255);
+            font-weight: 700px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h2 class="h">Weather App</h2>
+           
+            <h5 id="info">Search your city to get the update weather information</h5>
+            <p id="foot">Copyright &copy; 2021 All rights reserved | This template is made with <span class="icons icon-heart"></span> by <a href="www.sajid.com">Sajadul Islam Dipu</a></p>
+        </div>
+    </header>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input type="text" id="input" class="form-control" placeholder="Enter a location for Weather ...">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-danger" id="search_button">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <img id="icon" src="" alt="">
+            <h1 id="show_city">Pabna</h1>
+            <h3><span id="show_temperature"></span>&deg;C</h3>
+            <h1 id="weather_status" class="lead">Rain</h1>
+        </div>
+    </div>
+
+    
+
+    <!--  JavaScript file added -->
+    <script src="app.js"></script>
+    
+</body>
+ 
+</html>
